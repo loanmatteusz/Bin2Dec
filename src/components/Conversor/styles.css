@@ -1,0 +1,54 @@
+.Conversor {
+  margin: 0 auto;
+  width: 70%;
+  height: 100vh;
+  
+  color: white;
+  background-color: #030412;
+
+  font-family: monospace;
+  
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 90%;
+}
+
+label {
+  font-size: 42px;
+}
+
+strong#bin {
+  color: #00CB6A;
+}
+
+strong#dec {
+  color: #D99C00;
+}
+
+input {
+  font-size: 28px;
+  text-decoration: none;
+  outline: none;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 25px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+footer {
+  font-size: 18px;
+
+  grid-row-start: 3;
+}
