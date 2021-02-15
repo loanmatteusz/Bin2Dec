@@ -3,7 +3,14 @@ import './styles.css';
 
 function Conversor() {
 
-  const [decValue, setDecValue] = useState(0);
+  const [state, setState] = useState(0);
+  
+  const handleState = () => {
+    let text = document.getElementById('textInput').value ?
+      document.getElementById('textInput').value : '0';
+
+    setState(parseInt(text, 2));
+  }
 
   return (
     <div className="Conversor">
@@ -12,10 +19,10 @@ function Conversor() {
         <p>
           Enter a <strong id="bin">binary number</strong>, get a <strong id="dec">decimal conversion</strong>.
         </p>
-        <input type="text" />
+        <input id="textInput" type="text" onChange={handleState} />
         <p className="result">
           <label>
-            {decValue}
+            {state}
           </label>
         </p>
       </div>

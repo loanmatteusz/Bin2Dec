@@ -34,6 +34,7 @@ strong#dec {
 
 input {
   font-size: 28px;
+  font-family: monospace;
   text-decoration: none;
   outline: none;
   padding: 5px 20px;
